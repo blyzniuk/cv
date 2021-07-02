@@ -40,4 +40,7 @@ module.exports = {
       __key: "images",
     },
   ],
+  siteMetadata: {
+    siteUrl: `https://cvmain94379.gatsbyjs.io`,
+  },
 };
