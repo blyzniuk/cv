@@ -1,3 +1,9 @@
+if (process.env.NODE_ENV === 'development') {
+  require("dotenv").config({
+    path: `.env.development`,
+  })
+}
+
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
