@@ -1,4 +1,5 @@
 import * as React from "react"
+import { ChakraProvider, Heading, Button } from "@chakra-ui/react"
 
 // styles
 const pageStyles = {
@@ -128,17 +129,21 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
-      <h1 style={headingStyles}>
-        Here will be my CV
-        <br />
-        <span style={headingAccentStyles}>— written with Gatsby! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-    </main>
+    <ChakraProvider>
+      <main style={pageStyles}>
+        <title>Home Page</title>
+        <Heading>With chakra</Heading>
+        <Button>Subscribe</Button>
+        <h1 style={headingStyles}>
+          Here will be my CV
+          <br />
+          <span style={headingAccentStyles}>— written with Gatsby! </span>
+          <span role="img" aria-label="Party popper emojis">
+            🎉🎉🎉
+          </span>
+        </h1>
+      </main>
+    </ChakraProvider>
   )
 }
 
