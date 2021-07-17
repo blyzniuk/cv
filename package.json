@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "lint": "eslint src --ext .js --ext .jsx",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^2.0.1",
@@ -27,6 +29,7 @@
     "gatsby-plugin-google-analytics": "^3.8.0",
     "gatsby-plugin-image": "^1.8.0",
     "gatsby-plugin-manifest": "^3.8.0",
+    "gatsby-plugin-prettier-eslint": "^1.0.6",
     "gatsby-plugin-react-helmet": "^4.8.0",
     "gatsby-plugin-sharp": "^3.8.0",
     "gatsby-plugin-sitemap": "^4.4.0",
@@ -35,9 +38,19 @@
     "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-sharp": "^3.8.0",
     "node-fetch": "^2.6.1",
+    "prettier": "^2.3.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
